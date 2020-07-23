@@ -104,13 +104,13 @@ opacity: 0.7;
    justify-content: start;
    align-items: flex-end;
    background: url(/images/technique.jpg);
-   width: 100vw;
-   height: 100vh;
+   width: 99vw;
+   height: 99vh;
    margin: 0 auto;
  }
 
  .quote {
-   width: 100%;
+   
    height: 100px;
    color: yellow;
    font-size: 30px;
@@ -144,12 +144,12 @@ opacity: 0.7;
   padding: 7px 0;
 }
 
-.goal-title hr {
-  width: 50%;
+.small-title {
+  width: 200px;
   background-color: red;
   height: 3px;
   border-radius: 50%;
-  margin: 0 auto;
+  margin: 10px auto;
   
 }
 
@@ -159,17 +159,148 @@ opacity: 0.7;
   font-size: 16px;
   font-family: monospace;
   margin-top: 8px;
+  text-align: start;
+}
+
+
+
+
+/* HONOURS AND TITLES */
+
+#awards-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 700px;
+  }
+
+  #awards-div hr {
+    width: 25%;
+    background-color: red;
+    height: 3px;
+    border-radius: 50%;
+    margin: 10px auto;
+    
+  }
+
+.club-titles {
+  padding: 30px 0;
+
+}
+
+.club-titles h2 {
+font-weight: bold;
+font-family: monospace;
+text-align: left;
+margin-bottom: 10px;
+margin-top: 5px;
+}
+
+.club-titles ul {
+  list-style: circle;
+  text-align: left;
+  font-size: 16px;
+  font-family: monospace;
+}
+
+.club-titles li {
+  margin: 5px 0;
+}
+
+.individual-titles {
+  padding: 30px 0;
+}
+
+.individual-titles ul {
+  list-style-type: square;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+}
+
+.individual-titles li {
+  font-family: monospace;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.club-logos {
+  width: 25px;
+  height: 25px;
+  padding-right: 10px;
 }
 
 
 
 
 
+/* FACTS */
+
+#facts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.facts-title {
+  font-size: 18px;
+  font-family: monospace;
+  font-weight: bold;
+}
 
 
+.facts-img {
+  width: 250px;
+  height: 250px;
+  border: 1px solid darkred;
+  border-radius: 100%;
+  padding: 20px 0;
+  margin: 5px 0;
+
+}
+
+.p-facts {
+  padding: 5px 0;
+  text-align: justify;
+  font-size: 16px;
+  font-family: monospace;
+  color: darkred;
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 20px;
+
+}
+
+.fact {
+ display: flex;
+ flex-direction: row;
+ width: 75%;
+ margin: 0 auto;
+
+}
+
+.fact-text {
+  display: flex;
+  flex-direction: column;
+}
 
 
+/* END */
 
+.last-rule {
+
+  height: 5px;
+  margin: 50px auto;
+  background-color: red;
+  border-radius: 50%;
+  opacity: 0.9;
+  width: 25%;
+
+}
 
 
 
