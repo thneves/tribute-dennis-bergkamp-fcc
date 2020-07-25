@@ -2,8 +2,8 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; 
+ }
 
 
 header {
@@ -12,8 +12,7 @@ align-items: center;
 background: url('/images/bergkamp.jpg');
 width: 99vw;
 height: 99vh;
-opacity: 0.7;
-
+opacity: 2;
 }
 
 .div-title {
@@ -23,45 +22,39 @@ opacity: 0.7;
   margin-left: 50px;
   text-align: center;
   width: 50%;
-  
-  
-  
+    
 }
 
 .title {
     position: relative;
-    color: yellow;
+    color: #ffde22;
     font-size: 50px;
-    font-weight: bold;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
    }
 
 
    /* SECTIONS  HEADLINES*/
 
    .sections {
-     margin-top: 100px;
-     margin-bottom: 100px;
+     margin: 100px auto;
+     width: 30%;
      text-align: center;
-     color: yellow;
+     color: #ffde22;
+     background-color: #c70d3a;
+     border-top-left-radius: 20%;
+     border-bottom-right-radius: 20%;
    }
 
    .sections h1 {
-     font-family: monospace;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 600;
      font-size: 50px;
      padding-top: 20px;
      padding-bottom: 20px;
    }
 
-   .line-breaker {
-  
-    height: 5px;
-    margin: 0 auto;
-    background-color: red;
-    border-radius: 50%;
-    opacity: 0.9;
-    width: 25%;
-  }
+
 
   /* CAREER INFO  */
 
@@ -72,27 +65,35 @@ opacity: 0.7;
     flex-direction: row;
     justify-content: center;
     font-size: 17px;
-    font-family: sans-serif;
-     
-    }
-
-    #career-info h3 {
-      text-align: center;
-      margin-bottom: 5px;
+    font-family: sans-serif;   
     }
 
   .career-text {
     display: flex;
     flex-direction: column;
-    width: 600px;
+    width: 550px;
     text-align: justify;
-    padding: 1px 30px;
+    padding: 20px 30px;
+    margin: 0 30px;
     line-height: 30px;
+    background-color: #ffde22;
+    border-radius: 10%;
+    
     }
 
     .career-text p {
       padding-top: 5px;
       padding-bottom: 5px;
+      color: #c70d3a;
+      font-family: 'Montserrat';
+    }
+
+    .career-text h2 {
+      text-align: center;
+      color:#c70d3a;
+      margin-bottom: 5px;
+      font-weight: 600;
+      font-family: 'Montserrat', sans-serif;
     }
 
 
@@ -100,24 +101,29 @@ opacity: 0.7;
  /* QUOTE PICTURE */
 
  #img-div {
-   display: flex;
-   justify-content: start;
+   display: flex; 
    align-items: flex-end;
+   justify-content: flex-end;
+   
    background: url(/images/technique.jpg);
-   width: 99vw;
-   height: 99vh;
+   width: 95vw;
+   height: 95vh;
    margin: 0 auto;
- }
+   border: 10px solid #ffde22;
+   border-top-right-radius: 65%;
+   border-bottom-left-radius: 65%;
+   border-top-left-radius: 5%;
+   border-bottom-right-radius: 5%;
+   }
 
  .quote {
-   
    height: 100px;
-   color: yellow;
+   color: #ffde22;
    font-size: 30px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-style: italic;
-  position: relative;
-  left: 50px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    margin-right: 30px;
  }
   
 
@@ -131,22 +137,29 @@ opacity: 0.7;
   text-align: center;
 }
 
+.goal {
+  background-color: #ffde22;
+  padding: 15px 15px;
+  border-radius: 10%;
+}
+
 .goal-title {
+  padding-top: 10px;
   margin-bottom: 20px;
   text-align: center;
  
 }
 
-.goal-title p {
-  font-weight: bold;
-  font-size: 18px;
-  font-family: monospace;
+.goal-title h2 {
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
   padding: 7px 0;
+  color: #c70d3a;
 }
 
 .small-title {
   width: 200px;
-  background-color: red;
+  background-color: #ffde22;
   height: 3px;
   border-radius: 50%;
   margin: 10px auto;
@@ -155,11 +168,11 @@ opacity: 0.7;
 
 .goal-sub {
   width: 400px;
-  color: darkred;
+  color: #c70d3a;
   font-size: 16px;
-  font-family: monospace;
+  font-family: 'Montserrat', sans-serif;
   margin-top: 8px;
-  text-align: start;
+  text-align: justify;
 }
 
 
@@ -169,49 +182,55 @@ opacity: 0.7;
 
 #awards-div {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  text-align: center;
   margin: 0 auto;
-  width: 700px;
   }
 
-  #awards-div hr {
-    width: 25%;
-    background-color: red;
-    height: 3px;
-    border-radius: 50%;
-    margin: 10px auto;
-    
-  }
+.club-titles, .individual-titles {
+ width: 550px;
+  padding: 20px 30px;
+  margin: 0 30px;
+  background-color: #ffde22;
+  color: #c70d3a;
+  border-radius: 10%;
+}
 
-.club-titles {
-  padding: 30px 0;
 
+#awards-div h1 {
+font-weight: 600;
+font-family: 'Montserrat', sans-serif;
+text-align: center;
+margin-bottom: 10px;
+margin-top: 5px;
 }
 
 .club-titles h2 {
-font-weight: bold;
-font-family: monospace;
-text-align: left;
-margin-bottom: 10px;
-margin-top: 5px;
+font-family: 'Montserrat', sans-serif;
+font-weight: 600;
+
 }
 
 .club-titles ul {
   list-style: circle;
   text-align: left;
   font-size: 16px;
-  font-family: monospace;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .club-titles li {
-  margin: 5px 0;
+  margin: 15px 0;
 }
 
-.individual-titles {
-  padding: 30px 0;
+.club-logos {
+  width: 45px;
+  height: 35px;
+  padding-right: 10px;
+  position: relative;
+  top: 10px;
 }
+
+
 
 .individual-titles ul {
   list-style-type: square;
@@ -222,55 +241,43 @@ margin-top: 5px;
 }
 
 .individual-titles li {
-  font-family: monospace;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  margin: 5px 0;
+  margin: 12px 0;
 }
-
-.club-logos {
-  width: 25px;
-  height: 25px;
-  padding-right: 10px;
-}
-
-
-
-
 
 /* FACTS */
 
 #facts {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   text-align: center;
-}
+  }
 
 .facts-title {
   font-size: 18px;
-  font-family: monospace;
-  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #c70d3a;
 }
-
 
 .facts-img {
   width: 250px;
   height: 250px;
-  border: 1px solid darkred;
-  border-radius: 100%;
-  padding: 20px 0;
-  margin: 5px 0;
-
+  border: 2px solid #c70d3a;
+  border-radius: 50%;
+  padding: 20px 10px;
+  margin: 5px 0 10px 25px;
 }
 
 .p-facts {
   padding: 5px 0;
   text-align: justify;
   font-size: 16px;
-  font-family: monospace;
-  color: darkred;
+  font-family: 'Montserrat', sans-serif;
+  color: #c70d3a;
   width: 75%;
-  margin: 0 auto;
+  margin: auto auto;
   padding-top: 20px;
 
 }
@@ -279,8 +286,11 @@ margin-top: 5px;
  display: flex;
  flex-direction: row;
  width: 75%;
- margin: 0 auto;
-
+ background-color: #ffde22;
+ padding: 30px 0;
+ margin: 30px auto;
+ width: 800px;
+ border-radius: 25%;
 }
 
 .fact-text {
@@ -295,11 +305,43 @@ margin-top: 5px;
 
   height: 5px;
   margin: 50px auto;
-  background-color: red;
+  background-color: #c70d3a;
   border-radius: 50%;
   opacity: 0.9;
   width: 25%;
+}
 
+.final-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.final-div p {
+  color: #c70d3a;
+  font-size: 24px;
+  margin-bottom: 10px;
+
+}
+
+.final-div a {
+  font-size: 28px;
+  font-style: italic;
+  margin: 10px 0;
+  color: #c70d3a;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+
+}
+
+footer {
+  text-align: center;
+  font-size: 18px;
+  background-color: #c70d3a;
+  color: #ffde22;
+  padding: 50px 0;
 }
 
 
